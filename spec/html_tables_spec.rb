@@ -35,7 +35,7 @@ RSpec.describe 'index.html' do
     expect(new_york.children[2].children[0].text).to eq("California")
     expect(new_york.children[4].children[0].text).to be == "3,999,759"
   end
-
+ 
   it 'contains the correct information about Chicago' do
     new_york = parsed_html.search('table > tr')[3]
 
